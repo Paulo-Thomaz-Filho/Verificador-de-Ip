@@ -32,7 +32,6 @@ O Guarda de Segurança Virtual é um script autônomo projetado para monitorar a
 
 ```text
 C:/
-├── .env                  # Variáveis de ambiente com a chave da API (não versionado)
 ├── exemplo.env           # Modelo de variáveis de ambiente para configuração
 ├── historicoIps.json     # Banco de dados local em formato JSON
 ├── main.py               # Script principal com toda a lógica de verificação
