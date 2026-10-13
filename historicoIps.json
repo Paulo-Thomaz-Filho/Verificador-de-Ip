@@ -1,0 +1,14 @@
+{
+    "45.224.163.100": {
+        "ultima_verificacao": "2026-10-13",
+        "tentativas_erro": 1,
+        "status": "Seguro",
+        "detalhes_api": "Score AbuseIPDB: 9"
+    },
+    "192.168.10.50": {
+        "ultima_verificacao": "2026-10-13",
+        "tentativas_erro": 1,
+        "status": "Seguro",
+        "detalhes_api": "Score AbuseIPDB: 0"
+    }
+}
