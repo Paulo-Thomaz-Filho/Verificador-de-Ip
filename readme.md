@@ -109,11 +109,3 @@ O projeto utiliza a API RESTful V2 do AbuseIPDB para checagem de IPs.
 ### Retorno de Dados
 
 Os dados processados pela API são gravados diretamente no `historicoIps.json` contendo o status final e a pontuação técnica (`Score AbuseIPDB`), facilitando auditorias futuras[cite: 9, 10].
-
-## 👥 Equipe de Desenvolvimento
-
-* **Paulo Thomaz Filho** - Desenvolvedor Full-stack e Analista de Infraestrutura.
-
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
