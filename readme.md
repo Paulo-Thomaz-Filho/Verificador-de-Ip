@@ -8,25 +8,25 @@ O Guarda de Segurança Virtual é um script autônomo projetado para monitorar a
 
 ### 🎯 Principais Funcionalidades
 
-* **Leitura e Extração Inteligente**: Varre arquivos `.txt` na pasta de logs e utiliza Expressões Regulares (Regex) para identificar endereços IPv4[cite: 10].
-* **Filtro de Ameaças**: Captura especificamente as linhas de log que contenham os termos "ACCESS DENIED" ou "FALHA"[cite: 10].
-* **Gestão de Cache Local (Banco de Dados)**: Verifica um arquivo `historicoIps.json` antes de realizar consultas externas[cite: 10]. Atualiza as tentativas de erro de IPs já conhecidos, evitando o desperdício de requisições[cite: 10].
-* **Inteligência Externa via API**: Conecta-se à API pública do AbuseIPDB para investigar IPs inéditos[cite: 10].
-* **Classificação de Risco**: Avalia o "Confidence Score" da API[cite: 10]. IPs com pontuação menor que 50 são catalogados como "Seguro", enquanto pontuações maiores ou iguais a 50 são marcadas como "Perigoso"[cite: 10].
+* **Leitura e Extração Inteligente**: Varre arquivos `.txt` na pasta de logs e utiliza Expressões Regulares (Regex) para identificar endereços IPv4.
+* **Filtro de Ameaças**: Captura especificamente as linhas de log que contenham os termos "ACCESS DENIED" ou "FALHA".
+* **Gestão de Cache Local (Banco de Dados)**: Verifica um arquivo `historicoIps.json` antes de realizar consultas externas. Atualiza as tentativas de erro de IPs já conhecidos, evitando o desperdício de requisições.
+* **Inteligência Externa via API**: Conecta-se à API pública do AbuseIPDB para investigar IPs inéditos.
+* **Classificação de Risco**: Avalia o "Confidence Score" da API. IPs com pontuação menor que 50 são catalogados como "Seguro", enquanto pontuações maiores ou iguais a 50 são marcadas como "Perigoso".
 
 ## 🚀 Tecnologias Utilizadas
 
 ### Linguagem e Bibliotecas Nativas
 
-* **Python**: Linguagem principal de desenvolvimento[cite: 10].
-* **re (Regular Expressions)**: Para extração e validação do padrão numérico dos IPs[cite: 10].
-* **json**: Para manipulação, leitura e escrita do banco de dados local estruturado[cite: 10].
-* **pathlib**: Para gerenciamento seguro e multiplataforma dos caminhos de diretórios e arquivos[cite: 10].
+* **Python**: Linguagem principal de desenvolvimento.
+* **re (Regular Expressions)**: Para extração e validação do padrão numérico dos IPs.
+* **json**: Para manipulação, leitura e escrita do banco de dados local estruturado.
+* **pathlib**: Para gerenciamento seguro e multiplataforma dos caminhos de diretórios e arquivos.
 
 ### Dependências Externas
 
-* **requests**: Realização de requisições HTTP (`GET`) para comunicação com a API do AbuseIPDB[cite: 10].
-* **python-dotenv**: Carregamento seguro das variáveis de ambiente e credenciais a partir do arquivo `.env`[cite: 10].
+* **requests**: Realização de requisições HTTP (`GET`) para comunicação com a API do AbuseIPDB.
+* **python-dotenv**: Carregamento seguro das variáveis de ambiente e credenciais a partir do arquivo `.env`.
 
 ## 📁 Estrutura do Projeto
 
@@ -82,7 +82,7 @@ pip install requests python-dotenv
 ```
 
 4. **Configure as variáveis de ambiente**
-Crie um arquivo `.env` na raiz do projeto (utilizando o `exemplo.env` como base) e insira a sua credencial[cite: 10]:
+Crie um arquivo `.env` na raiz do projeto (utilizando o `exemplo.env` como base) e insira a sua credencial:
 
 ```env
 API_KEY=seu_token_gigante_do_abuseipdb_aqui
@@ -90,7 +90,7 @@ API_KEY=seu_token_gigante_do_abuseipdb_aqui
 ```
 
 5. **Execute a aplicação**
-Coloque seus arquivos de texto com os registros na pasta `logs/` e rode o script[cite: 10]:
+Coloque seus arquivos de texto com os registros na pasta `logs/` e rode o script:
 
 ```bash
 python main.py
